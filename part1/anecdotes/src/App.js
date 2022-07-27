@@ -32,6 +32,10 @@ const App = () => {
     console.log('copy[selected] => ' + copy[selected])
   }
 
+  const highestVotes = Math.max(...votes)
+
+  const mostVotedAnecdote = anecdotes[votes[highestVotes]]
+
   return (
     <div>
       <h1>Anecdote of the day</h1>
@@ -39,6 +43,10 @@ const App = () => {
       <p>Has {votes[selected]} votes.</p>
       <Button handleClick={() => setVotesValue()} text='Vote'/>
       <Button handleClick={() => setSelectedValue()} text='Next anecdote'/>
+      <h1>Anecdote with most votes</h1>
+      <h2>{mostVotedAnecdote}</h2>
+      <p>Has {highestVotes} votes</p>
+
     </div>
   )
 }
