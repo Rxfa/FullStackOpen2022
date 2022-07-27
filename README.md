@@ -5,5 +5,6 @@ part0
 part1
     courseinfo (done)
     unicafe (done)
-    anecdotes (ongoing)
+    anecdotes (done)
+part2
 ```

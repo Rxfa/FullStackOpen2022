@@ -29,12 +29,13 @@ const App = () => {
     const copy = [...votes]
     copy[selected] += 1
     setVotes(copy)
-    console.log('copy[selected] => ' + copy[selected])
+    console.log('votes => ' + votes)
+    console.log('Most voted anecdote =>' + mostVotedAnecdote)
   }
 
   const highestVotes = Math.max(...votes)
 
-  const mostVotedAnecdote = anecdotes[votes[highestVotes]]
+  const mostVotedAnecdote = anecdotes[votes.indexOf(highestVotes)]
 
   return (
     <div>
@@ -46,7 +47,6 @@ const App = () => {
       <h1>Anecdote with most votes</h1>
       <h2>{mostVotedAnecdote}</h2>
       <p>Has {highestVotes} votes</p>
-
     </div>
   )
 }
