@@ -17,7 +17,7 @@ const App = () => {
 
   const [selected, setSelected] = useState(0)
 
-    var randomValue = Math.floor(Math.random(() => Date.getMilliseconds()) * 6) + 1
+    var randomValue = Math.floor(Math.random() * 6) + 1
 
   const setSelectedValue = newValue => {
     setSelected(randomValue)
