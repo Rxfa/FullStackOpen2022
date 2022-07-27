@@ -3,5 +3,7 @@
 ```
 part0
 part1
-    courseinfo
+    courseinfo (done)
+    unicafe (ongoing)
+    anecdotes
 ```
